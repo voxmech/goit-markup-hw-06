@@ -835,6 +835,38 @@ body {
   top: -16px
 }
 
+.modal-checkbox-icon {
+  fill:var(--primary-white-color);
+  border-radius: 2px;
+  border: 1px solid var(--color-lightslate);
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal-form-checkbox:checked + .modal-checkbox-icon {
+  background-color: var(--logo-blue);
+  border-color: var(--logo-blue);
+}
+
+.visually-hidden {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.modal-form-textarea {
+  margin-bottom: 16px;
+}
+
+.modal-form-agreement {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
 .form-label-input, .form-label-textarea {
   color: var(--color-navy-blue);
   font-size: 12px;
