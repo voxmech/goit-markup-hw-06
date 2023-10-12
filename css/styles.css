@@ -21,6 +21,7 @@
   --color-lightslate: #8E8F99;
   --DAIRY: #FCFCFC;
   --color-ocean: #404bbf;
+  --color-navyblue-modal: #2E2F42;
   
 }
 
@@ -809,17 +810,67 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
+
 .modal-title {
   color: var(--color-navy-blue);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .modal-form-label, .modal-form-textarea {
   display: block;
   position: relative;
+}
+
+.modal-form-text {
+  color: var(--color-lightslate);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  position: absolute;
+  top: -16px
+}
+
+.form-label-input, .form-label-textarea {
+  color: var(--color-navy-blue);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 11px 16px 11px 40px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid var(--color-navyblue-modal);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon {
+  fill: var(--color-navyblue-modal);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label-input:hover, .form-label-input:focus, .form-label-textarea:hover, .form-label-textarea:focus {
+  outline: none;
+  border: 1px solid var(--logo-blue);
+}
+
+.form-label-input:hover + .modal-form-icon, .form-label-input:focus + .modal-form-icon {
+  fill: var(--logo-blue);
+}
+
+.form-label-textarea {
+  resize: none;
 }
 
 .modal-close {
