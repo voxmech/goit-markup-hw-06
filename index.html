@@ -391,7 +391,7 @@
       <form class="modal-signup-form" name="signup-form" autocomplete="on">
         <label class="modal-form-label" for="full-name">
           <span class="modal-form-text">Name</span>
-          <input class="form-label-input" type="text" id="full-name">
+          <input class="form-label-input" type="text" id="full-name" required >
           <svg class="modal-form-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-person"></use>
           </svg>
@@ -399,7 +399,7 @@
 
         <label class="modal-form-label" for="phone-number">
           <span class="modal-form-text">Phone</span>
-          <input class="form-label-input" type="tel" id="phone-number">
+          <input class="form-label-input" type="tel" id="phone-number" required >
           <svg class="modal-form-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-phone"></use>
           </svg>
@@ -407,7 +407,7 @@
 
         <label class="modal-form-label" for="email">
           <span class="modal-form-text">Email</span>
-          <input class="form-label-input" type="email" id="email-address">
+          <input class="form-label-input" type="email" id="email-address" required >
           <svg class="modal-form-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-email"></use>
           </svg>
@@ -416,7 +416,7 @@
         <label class="modal-form-textarea">
           <span class="modal-form-text">Comment</span>
           <textarea name="comment" class="form-label-textarea" placeholder="text input"
-          rows="6"></textarea>
+          rows="6"></textarea> 
         </label>
 
         <label class="modal-form-agreement">
@@ -428,7 +428,7 @@
             <a class="modal-link-text" href="">Privacy Policy</a> 
           </span>
         </label>
-        
+        <button class ="modal-form-button" type="submit">Send</button>
 
         
       
