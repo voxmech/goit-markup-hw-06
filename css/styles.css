@@ -1186,3 +1186,23 @@ body {
 .image-title-item {
   font-weight: 500;
 }
+
+/*Mobile View*/
+
+/*Media Quiries*/
+
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+  .container {
+    width: 775px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 767px), only screen and (max-width: 427px) {
+  .header-navigator-menu,
+  .header-ctas {
+    display: none;
+  }
+
+ }
+
